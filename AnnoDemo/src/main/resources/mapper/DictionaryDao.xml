@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.anno.dict.dao.DictionaryDao">
+
+
+    <select id="queryDic" parameterType="string" resultType="com.example.anno.dict.domain.Dictionary">
+
+        select * from dictinary where value=#{value}
+
+    </select>
+
+
+</mapper>
